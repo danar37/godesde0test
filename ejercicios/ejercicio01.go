@@ -2,9 +2,12 @@ package ejercicios
 
 import "strconv"
 
-func Ejemplo(texto) (int, string) {
+func Ejemplo(texto string) (int, string) {
 
-	num := strconv.Atoi(texto)
+	num, err := strconv.Atoi(texto)
+	if err != nil {
+		return 0, "Hubo un error" + err.Error()
+	}
 	if num > 100 {
 		return num, "Es mayor a 100 "
 	} else {

@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+
+	"github.com/danar37/godesde0test/ejercicios"
 )
 
 func main() {
 	/*estado, texto := variables.ConviertoaTexto(2500)
 	fmt.Println(estado)
-	fmt.Println(texto)*/
+	fmt.Println(texto)
 
 	if os := runtime.GOOS; os == "linux" || os == "OS X." {
 		fmt.Println("Esto no es Windows, es ", os)
@@ -24,5 +25,9 @@ func main() {
 	default:
 		fmt.Printf("%s \n", os)
 
-	}
+	}*/
+
+	numero, texto := ejercicios.Ejemplo("500")
+	fmt.Println(numero)
+	fmt.Println(texto)
 }
