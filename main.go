@@ -16,4 +16,14 @@ func main() {
 		fmt.Println("Esto es Windows")
 	}
 
+	switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("Esto es linux")
+	case "darwin":
+		fmt.Println("Eso es Darwin")
+	default:
+		fmt.Printf("%s \n", os)
+
+	}
+
 }
