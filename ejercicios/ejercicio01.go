@@ -2,7 +2,7 @@ package ejercicios
 
 import "strconv"
 
-func Ejemplo(texto string) (int, string) {
+func ConvaNumerico(texto string) (int, string) {
 
 	num, err := strconv.Atoi(texto)
 	if err != nil {

@@ -27,7 +27,7 @@ func main() {
 
 	}*/
 
-	numero, texto := ejercicios.Ejemplo("500")
+	numero, texto := ejercicios.ConvaNumerico("500")
 	fmt.Println(numero)
 	fmt.Println(texto)
 }
