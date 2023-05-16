@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/danar37/godesde0test/ejercicios"
-)
-
 func main() {
 	/*estado, texto := variables.ConviertoaTexto(2500)
 	fmt.Println(estado)
@@ -25,9 +19,10 @@ func main() {
 	default:
 		fmt.Printf("%s \n", os)
 
-	}*/
+	}
 
 	numero, texto := ejercicios.ConvaNumerico("500")
-	fmt.Println(numero)
-	fmt.Println(texto)
+	  fmt.Println(numero)
+	  fmt.Println(texto)*/
+
 }
