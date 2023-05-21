@@ -13,29 +13,31 @@ var leyenda string
 var err error
 
 func IngresoNumeros() {
-scanner:
-	bufio.NewScanner(os.Stdin)
+	scanner := bufio.NewScanner(os.Stdin)
 
-	fmt.Println("Ingrese número 1: ")
+	fmt.Println("Ingrese número 1 :")
+
 	if scanner.Scan() {
 		numero1, err = strconv.Atoi(scanner.Text())
 		if err != nil {
-			panic("Ingrese el dato correcto" + err.Error())
-
+			panic("El dato no es correcto, favor validar " + err.Error())
 		}
+	}
 
-		fmt.Println("Ingrese número 2: ")
+	fmt.Println("Ingrese número 2 :")
+
 	if scanner.Scan() {
 		numero2, err = strconv.Atoi(scanner.Text())
 		if err != nil {
-			panic("Ingrese el dato correcto" + err.Error())
-
+			panic("El dato no es correcto, favor validar " + err.Error())
 		}
+	}
 
-		fmt.Println("Ingrese número 1: ")
+	fmt.Println("Ingrese leyenda :")
+
 	if scanner.Scan() {
 		leyenda = scanner.Text()
-		}
-
-		fmt.Println(leyenda, numero1*numero2)
 	}
+	fmt.Println(leyenda, numero1*numero2)
+
+}
