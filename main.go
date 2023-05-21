@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/danar37/godesde0test/teclado"
+)
+
 func main() {
 	/*estado, texto := variables.ConviertoaTexto(2500)
 	fmt.Println(estado)
@@ -24,5 +28,7 @@ func main() {
 	numero, texto := ejercicios.ConvaNumerico("500")
 	  fmt.Println(numero)
 	  fmt.Println(texto)*/
+
+	teclado.IngresoNumeros()
 
 }
