@@ -1,8 +1,8 @@
 package main
 
-import (
-	"github.com/danar37/godesde0test/teclado"
-)
+import "fmt"
+		"github.com\danar37\godesde0test\iteraciones"
+
 
 func main() {
 	/*estado, texto := variables.ConviertoaTexto(2500)
@@ -27,8 +27,10 @@ func main() {
 
 	numero, texto := ejercicios.ConvaNumerico("500")
 	  fmt.Println(numero)
-	  fmt.Println(texto)*/
+	  fmt.Println(texto)
 
-	teclado.IngresoNumeros()
+	teclado.IngresoNumeros()*/
 
+	func Iterar() {
+	}
 }
